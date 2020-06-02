@@ -1,0 +1,495 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    font-family: sans-serif;
+}
+
+.top {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    min-height: 400px;
+    padding: 30px;
+    font-family: sans-serif;
+    color: rgb(41, 41, 41);
+    border: 1px solid rgb(145, 145, 145);
+    background-color: rgb(231, 231, 231);
+}
+
+/*----------------------header---------------------------*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(112, 112, 112);
+    height: 100px;
+}
+
+header img {
+    pointer-events: none;
+}
+
+header>div {
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.butt {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(228, 228, 228);
+    padding: 10px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.butt:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.butt:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.one .butt,
+.activation .butt {
+    border-radius: 5px;
+}
+
+.fontAlign img {
+    transform: rotate(180deg);
+}
+
+.one .butt {
+    font-weight: bolder;
+    background-color: rgb(130, 130, 130);
+}
+
+/*----------------------color---------------------------*/
+header {
+    position: relative;
+}
+
+.div_colors {
+    margin: 0;
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    background-color: rgba(1, 1, 1, 0.2);
+    z-index: 10;
+}
+
+.choose_colors {
+    position: fixed;
+    top: 70px;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+}
+
+.choose_colors>div:first-child {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.choose_colors p:first-child {
+    font-weight: bold;
+}
+
+.choose_colors p {
+    padding: 5px;
+}
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(219, 219, 219, 0.3);
+    margin-top: -1px;
+    padding: 15px;
+}
+
+.color-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.colors_span span {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 12px;
+}
+
+.colors_span span:first-child {
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+/*----------------------images---------------------------*/
+.div_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 15px 0;
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+.color_img {
+    width: 160px;
+    height: 80px;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+/*----------------------input_file---------------------------*/
+.input_file {
+    padding-top: 15px;
+    width: 100%;
+    position: relative;
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+.input_file input,
+.input_title {
+    margin: 15px 0;
+    width: 100%;
+}
+
+.input_file input {
+    opacity: 0;
+    height: 35px;
+}
+
+.input_title {
+    margin-left: 15px;
+    width: 470px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(200, 200, 200, 0.3);
+    background-color: #fff;
+}
+
+.input_title div {
+    padding: 10px 15px;
+    font-size: 12px;
+}
+
+.input_title div:last-child {
+    background-color: rgb(219, 219, 219);
+}
+
+.input_title div:first-child {
+    color: rgb(219, 219, 219);
+}
+
+
+/*----------блок зміни розміру і family тексту----------*/
+.fontOther {
+    position: relative;
+}
+
+.li_size,
+.li_family {
+    align-items: left;
+    padding: 10px 0;
+    position: absolute;
+    top: 45px;
+    right: 80px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.li_family {
+    right: 120px;
+    width: 180px;
+}
+
+.li_size ul,
+.li_family ul {
+    text-align: left;
+    list-style-type: none;
+}
+
+.li_size li,
+.li_family li {
+    padding: 0 30px 0 10px;
+    width: 100%;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/*--------------------sign_in--------------------*/
+.sign_in {
+    position: absolute;
+    top: 70px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+    padding: 15px;
+}
+
+.sign_in p:first-child {
+    font-weight: bolder;
+}
+
+.sign_in input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgba(200, 200, 200, 0.3);
+    margin: 15px 0;
+    padding-left: 10px;
+}
+
+.sign_in div:last-child {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(130, 130, 130);
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+
+.sign_in div:nth-of-type(1) {
+    width: 100%;
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/*--------------------sign_out--------------------*/
+.sign_block,
+.table_block,
+.li_block {
+    position: absolute;
+    z-index: 9;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+.sign_out {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.sign_out div {
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+    width: 100px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign_out div:first-child {
+    background-color: rgb(130, 130, 130);
+    margin-right: 10px;
+}
+
+.sign_out div:last-child {
+    background-color: red;
+}
+
+/* ----------------- стилізація блоку table_box ----------------- */
+.table_box {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #fff;
+    width: 550px;
+    z-index: 10;
+    padding: 20px;
+}
+
+.table_title,
+.li_title {
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table_title p:last-child {
+    cursor: pointer;
+}
+
+.create_table {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.create_table input,
+.create_table select {
+    height: 30px;
+    padding-left: 10px;
+    margin-top: 5px;
+    color: rgb(130, 130, 130);
+}
+
+.table_box_left,
+.table_box_right {
+    width: 50%;
+}
+
+.table_box_left>div,
+.table_box_right>div {
+    padding: 15px 0;
+}
+
+.table_box_left>div,
+.table_box_right>div:nth-child(1),
+.table_box_right>div:nth-child(2),
+.border_style,
+.border_color {
+    display: flex;
+    flex-direction: column;
+}
+
+.table_box_left input,
+.table_box_right>div:nth-child(1),
+.table_box_right>div:nth-child(2) {
+    width: 100%;
+}
+
+.border {
+    display: flex;
+    flex-direction: row;
+}
+
+.border_style,
+.border_color {
+    width: 50%;
+}
+
+.border_style,
+.table_box_left {
+    margin-right: 5px;
+}
+
+.border_color,
+.table_box_right {
+    margin-left: 5px;
+}
+
+.create_table .table_button {
+    margin: 5px 0;
+    width: 100%;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.create_table .button_reset {
+    background-color: red;
+}
+.li_error{
+    color: red;
+    font-size: 10px;
+    height: 15px;
+}
+/* ----------------- стилізація блоку ui/oi ----------------- */
+.create_li {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #fff;
+    width: 300px;
+    z-index: 10;
+    padding: 20px;
+}
+
+.li_form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 12px;
+}
+
+.li_form>div {
+    margin: 15px 0;
+}
+
+.li_form select,
+.li_form input {
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 10px;
+    width: 100%;
+    color: rgb(130, 130, 130);
+}
+
+.li_list_button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.li_list_button .li_button {
+    width: 50%;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.li_list_button .li_create {
+    background-color: green;
+    margin-left: 5px;
+}
+
+.li_list_button .li_reset {
+    background-color: red;
+    margin-right: 5px;
+}
+
+.li_del {
+    cursor: pointer;
+}
+
+
+/*-------------------------------------------*/
+header .butt:hover {
+    cursor: pointer;
+    background-color: rgb(250, 250, 250);
+}
+
+.li_size li:hover,
+.li_family li:hover,
+.sign_in div:last-child:hover {
+    cursor: pointer;
+    background-color: rgb(170, 170, 170);
+}
+
+.choose_colors p:last-child:hover {
+    cursor: pointer;
+}

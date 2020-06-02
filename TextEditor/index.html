@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="first-step">
+            <div class="top">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="buttons-top">
+                <span class="button editBtn" onclick="editBtn()">edit</span>
+                <span class="button styleBtn" onclick="styleBtn()">style</span>
+            </div>
+            <div class="bottom">
+                <div class="edit-block hidden">
+                    <form>
+                        <textarea class="area"></textarea>
+                        <div class="area-button">
+                            <span class="button addBtn" onclick="addBtn()">add</span>
+                            <span class="button saveBtn" onclick="saveBtn()">save</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="style-block hidden">
+                    <form name="form-size">
+                        <h3>Font Size:</h3>
+                        <input class="radio-first" type="radio" name="size" id="12px" value="12px" onclick="fontSize()">
+                        <label for="12px">12px</label>
+                        <input type="radio" name="size" id="14px" value="14px" onclick="fontSize()">
+                        <label for="14px">14px</label>
+                        <input type="radio" name="size" id="16px" value="16px" onclick="fontSize()" checked>
+                        <label for="16px">16px</label>
+                        <input type="radio" name="size" id="18px" value="18px" onclick="fontSize()">
+                        <label for="18px">18px</label>
+                        <input type="radio" name="size" id="20px" value="20px" onclick="fontSize()">
+                        <label for="20px">20px</label>
+                    </form>
+                    <form name="form-family">
+                        <h3>Font Family:</h3>
+                        <select name="family" onchange="fontFamily()">
+                            <option value="" selected disabled>Choose option</option>
+                            <option value="cursive">cursive</option>
+                            <option value="fantasy">fantasy</option>
+                            <option value="monospace">monospace</option>
+                            <option value="sans-serif">sans-serif</option>
+                        </select> 
+                    </form>
+                    <form name="form-colors" class="form-colors">
+                        <h3>Colors:</h3>
+                        <div class="div-color">
+                            <span class="textColor" onclick="Color()">Color of text</span>
+                            <span class="backgroundColor" onclick="Color()">Background color</span>
+                        </div>
+                    </form>
+                    <form name="form-style" class="form-style">
+                        <h3>Style:</h3>
+                        <input type="checkbox" id="weight" name="weight" onclick="fontWeight()">
+                        <label for="weight">Bold text</label>
+                        <input type="checkbox" id="style" name="style" onclick="fontStyle()">
+                        <label for="style">Italic text</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="second-step hidden">
+            <h3>Choose what you want:</h3>
+            <form name="form-create" class="form-create">
+                <input type="radio" name="create" id="table" value="table" onclick="openTable()">
+                <label for="table">table</label>
+                <input type="radio" name="create" id="list" value="list" onclick="openList()">
+                <label for="list">list</label>
+            </form>
+            <div class="table-box hidden">
+                <form name="form-create-table" class="create-table">
+                    <p>
+                        <span>Count TR:</span>
+                        <input type="text" class="countTr" placeholder="Count TR:">
+                    </p>
+                    <p>
+                        <span>Count TD:</span>
+                        <input type="text" class="countTd" placeholder="Count TD:">                        
+                    </p>
+                    <h3>Add style to your table:</h3>
+                    <p>
+                        <span>Width of TD:</span>
+                        <input type="text" class="widthTd" placeholder="Width of TD:">                        
+                    </p>
+                    <p>
+                        <span>Heigth of TD:</span>
+                        <input type="text" class="heigthTd" placeholder="Heigth of TD:">                        
+                    </p>
+                    <p class="border">
+                        <span>Width of border:</span>
+                        <input type="text" class="widthBorder" placeholder="Width:">
+                        <span>Type of border:</span>
+                        <select class="typeBorder">
+                            <option value="solid" selected>solid</option>
+                            <option value="double">double</option>
+                            <option value="dotted">dotted</option>
+                            <option value="inset">inset</option>
+                        </select> 
+                        <span>Color of border:</span>
+                        <select class="colorBorder">
+                            <option value="black" selected>black</option>
+                            <option value="red">red</option>
+                            <option value="blue">blue</option>
+                            <option value="green">green</option>
+                        </select> 
+                    </p>
+                    <div class="table-button">
+                        <span class="create" onclick="createTable()">Create table<span>
+                    </div>
+                </form>
+            </div>
+            <div class="list-box hidden">
+                <form name="form-create-list" class="create-list">
+                    <p>
+                        <span>Count Li:</span>
+                        <input type="text" class="countLi" placeholder="Count Li:">
+                    </p>
+                    <p>
+                        <span>Type of marks:</span>
+                        <select class="typeMarks">
+                            <option value="circle" selected>circle</option>
+                            <option value="disc">disc</option>
+                            <option value="square">square</option>
+                        </select> 
+                    </p>
+                    <div class="list-button">
+                        <span class="create" onclick="createList()">Create list<span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

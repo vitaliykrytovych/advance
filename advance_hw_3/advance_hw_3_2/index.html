@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="div_data">
+        <p>Баланс</p>
+        <div><span id="span_balans"></span><span> грн.</span></div>
+        <p>Пиво</p>
+        <div><span id="span_beer"></span><span> шт.</span></div>
+        <p>Вино</p>
+        <div><span id="span_wine"></span><span> шт.</span></div>
+        <p>Пепсі</p>
+        <div><span id="span_pepsi"></span><span> шт.</span></div>
+    </div>
+    <div id="div_num">
+        <p>Кількість</p>
+        <input id="input_num" type="number" step="1" min="1">
+        <div id="radio_change">
+            <input type="radio" name="number" id="radio_beer" value="beer" checked>
+            <label for="radio_beer">Пиво</label>
+            <input type="radio" name="number" id="radio_wine" value="wine">
+            <label for="radio_wine">Вино</label>
+            <input type="radio" name="number" id="radio_pepsi" value="pepsi">
+            <label for="radio_pepsi">Пепсі</label>
+        </div>
+        <div id="add" class="button">Додати</div>
+        <div id="add_goods"></div>
+        <div id="buy" class="button">Купити</div>
+    </div>
+    <div id="output_data"></div>
+    <script src="math.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

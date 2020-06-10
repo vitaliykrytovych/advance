@@ -29,17 +29,4 @@ function calculation (obj){
     }; 
 };
 
-
-
-
-
-
-
-
-
-
 export {cash, assortment, calculation};
-
-
-
-// export {sellBeer, checkBank, checkStorage}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advance_hw_6_1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="my_form">
+        <h1>Please sign up</h1>
+        <form name="enter_user">
+            <div>
+                <label class="before_A">First name</label>
+                <label class="before_a hidden">First name</label>
+                <input type="text" class="first_name" onclick="inputClick()">
+                <label class="after_V hidden"></label>
+                <label class="after_X hidden"></label>
+                <p class="hidden"><span>Please provide a valid First name</span></p>
+            </div>
+            <div>
+                <label class="before_A">Last name</label>
+                <label class="before_a hidden">Last name</label>
+                <input type="text" class="last_name" onclick="inputClick()">
+                <label class="after_V hidden"></label>
+                <label class="after_X hidden"></label>
+                <p class="hidden"><span>Please provide a valid Last name</span></p>
+            </div>
+            <div>
+                <label class="before_A">Email address</label>
+                <label class="before_a hidden">Email address</label>
+                <input type="text" class="email" onclick="inputClick()">
+                <label class="after_V hidden"></label>
+                <label class="after_X hidden"></label>
+                <p class="hidden"><span>Please provide a valid Email address</span></p>
+            </div>
+            <div>
+                <label class="before_A">Password</label>
+                <label class="before_a hidden">Password</label>
+                <input type="password" class="password" onclick="inputClick()">
+                <label class="after_V hidden"></label>
+                <label class="after_X hidden"></label>
+                <p class="hidden"><span>Please provide a valid Password</span></p>
+            </div>
+            <button id="submit_signUp">Sing Up</button>
+            <p id="signIn">Sign In now</p>
+        </form>
+    </div>
+    <div class="div_signIn">
+        <form name="my_signIn">
+            <h1>Please sign in</h1>
+            <div>
+                <label class="before_A">Email address</label>
+                <label class="before_a hidden">Email address</label>
+                <input type="text" class="email_signIn" onclick="inputClick()">
+                <label class="after_V hidden"></label>
+                <label class="after_X hidden"></label>
+                <p class="hidden"><span>Incorrect email address</span></p>
+            </div>
+            <div>
+                <label class="before_A">Password</label>
+                <label class="before_a hidden">Password</label>
+                <input type="password" class="password_signIn" onclick="inputClick()">
+                <label class="after_V hidden"></label>
+                <label class="after_X hidden"></label>
+                <p class="hidden"><span>Incorrect password</span></p>
+            </div>
+            <button id="submit_signIn">Sing In</button>
+            <p id="signUp">Sign Up now</p>
+        </form>
+    </div>
+    <div class="div-acc">
+        <div class="div-acc__header"></div>
+        <div class="div-acc__icons"><img src="man.svg" alt="account"></div>
+        <div class="div-acc__data">
+            <p class="div-acc__data-name"><span class="div-acc__data-firstName"></span><span class="div-acc__data-secondName"></span></p>
+            <p class="div-acc__data-emailAddress"></p>
+            <p class="div-acc__data-position"></p>
+        </div>
+        <div class="div-acc__footer">Sing Up</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

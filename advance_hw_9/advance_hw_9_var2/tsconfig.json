@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "removeComments": true,
+        "outFile": "script.js",
+        "watch": true
+    },
+    "files": [
+        "script.ts"
+    ],
+    "compileOnSave": true
+}
